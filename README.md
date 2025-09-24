@@ -1,24 +1,25 @@
-Este código simula o funcionamento de um caixa eletrônico que realiza saques em dinheiro, determinando automaticamente a quantidade de notas necessárias para compor o valor solicitado.
-Aqui está a descrição detalhada em formato de texto:
+Caixa Eletrônico – Simulador de Saque
 
-O programa inicia exibindo o título “Caixa Eletrônico” e solicita ao usuário que digite um valor inteiro para saque, com um valor mínimo de R$ 2.
-Em seguida, o código verifica se o valor informado é menor que R$ 2. Caso seja, é exibida uma mensagem informando que o valor é inválido e o saque não é realizado.
+Este programa simula o funcionamento de um caixa eletrônico, calculando automaticamente a quantidade de notas necessárias para realizar um saque a partir de um valor informado pelo usuário.
 
-Se o valor for válido, o programa calcula a quantidade de notas de cada valor que será utilizada para compor o saque.
-A lógica funciona utilizando divisões inteiras (//) e o operador de resto (%), seguindo esta ordem de prioridade:
+Como funciona
 
-primeiro notas de R$ 100,
+O programa exibe o título “Caixa Eletrônico” e solicita que o usuário digite um valor inteiro para saque, com valor mínimo de R$ 2. Se o valor digitado for menor que R$ 2, o programa informa que o valor é inválido e o saque não é realizado.
 
-depois notas de R$ 50,
+Se o valor for válido, o programa calcula a quantidade de cada nota necessária para compor o saque. As notas disponíveis são R$ 100, R$ 50, R$ 20, R$ 10, R$ 5 e R$ 2. A lógica utiliza divisões inteiras para determinar o número de notas e atualiza o valor restante a cada etapa.
 
-em seguida de R$ 20,
+Ao final, o programa exibe apenas as notas que serão entregues, omitindo aquelas com quantidade zero.
 
-depois de R$ 10,
+Exemplo de uso
 
-depois de R$ 5,
+O usuário pode digitar um valor, como R$ 186, e o programa exibirá:
+Saque realizado com sucesso
+Notas de 100: 1
+Notas de 50: 1
+Notas de 20: 1
+Notas de 10: 1
+Notas de 5: 1
 
-e por fim notas de R$ 2.
+Requisitos
 
-A cada cálculo, o programa atualiza o valor restante para que as próximas operações considerem apenas o saldo que falta.
-
-Por fim, o programa exibe uma mensagem de sucesso e apresenta apenas as notas que serão efetivamente entregues, omitindo aquelas com quantidade zero.
+Para executar o programa é necessário ter o Python 3 instalado e utilizar um terminal ou IDE que permita entrada de dados pelo teclado.
